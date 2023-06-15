@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+
+
+  body {
+      background-color: #000000;
+      background-image: url(./assets/blur-1.png), url(./assets/blur-2.png);
+      background-repeat: no-repeat, no-repeat;
+      background-position: bottom left, top right;
+      min-height: 94vh;
+      background-attachment: fixed;
+  }
+
+
+
+  header .menudenavegacao {
+      color: #FFF;
+      font-family: Manrope;
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+      margin-top: 3%;
+      margin-left: 21%;
+      margin-right: 12%;
+      align-items: center;
+      font-size: 1.2vw;
+      white-space: nowrap;
+      
+  }
+  header .menudenavegacao li:hover{
+    color: #8257E5;
+    transition: 0.3s;
+
+  }
+  
+
+  header .menunav {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      font-weight: 400;
+
+  }
+
+  header .pegarmeucafe {
+      display: flex;
+      border: #8257E5 solid 1px;
+      border-radius: 6px;
+      padding: 0.6% 5% 0.6% 5%;
+      background-color: transparent;
+      color: #FFF;
+      font-family: Manrope;
+      text-transform: uppercase;
+      font-weight: 700;
+      white-space: nowrap;
+      font-size: 1.0vw;
+
+  }
+
+  header .pegarmeucafe:hover{
+    color: #8257E5;
+    transition: 0.5s;
+  }
+
+  main .conteudo {
+      display: flex;
+      align-items: center;
+      font-family: Manrope;
+      font-weight: 700;
+      color: white;
+      flex-direction: column;
+      width: 72%;
+
+
+      position: relative;
+      left: 12%;
+
+
+  }
+
+  main #logocafe {
+      width: 60%;
+
+
+  }
+
+  #copos {
+      position: fixed;
+      bottom: 0;
+      width: 55%;
+  }
+
+
+  a {
+      text-decoration: none;
+      color: inherit;
+
+  }
+
+  .mobilemenu,
+  .mobilemenuicon,
+  .pegarmeucafemain,
+  #slogan {
+      display: none;
+  }
+
+  @media screen and (max-width: 728px) {
+
+
+
+
+
+      body {
+          background-image: url(./assets/blur-mobile.png);
+          background-repeat: repeat-x;
+      }
+
+
+
+
+
+
+
+
+      header .menudenavegacao {
+          display: none;
+      }
+
+      main .conteudo {
+          display: flex;
+          align-items: center;
+          font-family: Manrope;
+          font-weight: 700;
+          color: white;
+          flex-direction: column;
+          position: fixed;
+          top: 52%;
+
+
+      }
+
+
+
+      main .pegarmeucafemain {
+          display: flex;
+          border: #8257E5 solid 1px;
+          border-radius: 6px;
+          padding: 2% 5% 2% 5%;
+          background-color: transparent;
+          color: #FFF;
+          font-family: Manrope;
+          text-transform: uppercase;
+          font-weight: 700;
+          position: fixed;
+          top: 40%;
+          white-space: nowrap;
+          font-size: 3.5vw;
+          align-items: center;
+
+
+      }
+      main .pegarmeucafemain:hover{
+        color: #8257E5;
+        transition: 0.5s;
+      }
+
+      main .pegarmeucafemain button{
+        display: flex;
+        align-items: center;
+        
+      }
+      main #setinha{
+        width: 5%;
+      }
+
+      
+
+
+
+
+
+      #copos {
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+      }
+
+      #slogan {
+          display: flex;
+          position: fixed;
+          max-width: 60%;
+          font-size: 6vw;
+          text-align: center;
+          font-family: Manrope;
+          font-weight: 700;
+
+          top: 16%;
+      }
+
+      header .mobilemenuicon {
+          padding: 5% 5%;
+          display: block;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid rgba(220, 220, 220, .2);
+          
+
+      }
+
+      header .mobilemenuicon button {
+          background-color: transparent;
+          cursor: pointer;
+
+
+      }
+
+      header .mobilemenuicon #mobileicon {
+          width: 40%;
+
+      }
+
+      header .mobilemenu {
+          background-color: black;
+          color: rgba(249, 242, 251, 0.79);;
+          z-index: 2;
+          position: absolute;
+          height: 90%;
+          width: 100%;
+          font-weight: 500;
+
+      }
+
+      header .mobilemenu ul {
+          position: fixed;
+          
+          top: 15%;
+          display: flex;
+          flex-direction: column;
+          align-items: right;
+          gap: 8px;
+          
+      }
+
+      
+
+      header .mobilemenu li {
+          display: flex;
+          font-family: Manrope;
+          font-size: 130%;
+          justify-content: left;
+          border-bottom: 0.5px solid rgba(220, 220, 220, .2);
+          border-left: 3px solid #8257E5;
+          padding-left: 2%;
+
+
+
+          width: 100vh;
+
+      }
+
+      header .open {
+          display: block;
+      }
+
+
+
+
+
+  }
